@@ -1,24 +1,24 @@
 ---
 layout: post
 title:      "Rails Project"
-date:       2018-04-18 13:41:40 +0000
+date:       2018-04-18 09:41:41 -0400
 permalink:  rails_project
 ---
 
 
 Rails is an incredible tool for building flexible and clean CRUD applications.  After investing a good deal of time in understanding its functions and grappling with its magical qualities, I was able to create a site with a surprising amount of features.
 
-#### The App: 
+## The App: 
 
 "Road Trip" is an application that allows users to create, well ...road trips.  Trips can be built by adding previously created destinations or by creating totally new ones.  In addition, destinations have descriptive tags which can also be selected or created.  This can all be done from a single form, or destinations can be created on a form separate from an individual trip.  The app doesn't have all the functionality of one connected to a fancy map api, but it did allow me to play with more complicated join models.  I wanted to challenge myself to juggle a deep set of associations, and I think I did just that:
 
-###### Associations:
+### Associations:
 
 ![](https://image.ibb.co/eskSWn/schema.png)
 
 The three join tables were necessary because I wanted these objects to exist independently, to validate uniqueness, and to associate freely, but that did pose some issues when it came to drawing out forms.
 
-###### Implementation:
+### Implementation:
 
 I began using devise to implement my authentication; however, I found the obscurity of it to be a little too daunting for this project.  I ended up building my own authentication process from scratch, but I hope to go back and do a deep dive into devise at a later point.  It's clearly a powerful gem, but ultimately led me away from more pressing challenges I was interested in tackling.  Also, I made third-party authentication available through github.
 
@@ -26,7 +26,7 @@ After logging in, a user can see a list of other users, road trips, destinations
 
 A user can CRUD up these objects with some nested forms.  A single road trip form exists to build everything on one page, and, separately, a destination form exists if a user wants to create spots for others to add to their trips.
 
-###### Hazards :
+### Hazards :
 
 Feature Creep was a definite issue as I started to design the application.  I had fun dreaming up all the things this site could do, but when I got down actually coding it I realized I was way in over my head.  After a couple days just trying to get the skeleton up I ran into an impasse with devise.  A cross-site request forgery issue had me baffled, and I spent another day just learning the ins and outs of devises views, controllers, and helper methods.  It was time well spent, but at that point my application seemed too complicated for me to unravel.  I began again.
 
@@ -56,7 +56,7 @@ I found I could create some attr_accessor variables to pass in a few more attrib
 
 ***As I was writing this blog, I had another idea - maybe I could create a form that was for the join table instead of for the RodeTrip model.  Since I was curious, I took another day to build that up; however, it had it's own complications.  For instance, the join model needs both a road_trip_id and a destination_id, but I didn't want the user to always have to create a new destination.  I wanted them to be able to just add destinations that had already been created as well.  I found I could do this, but was having real trouble passing in the stop_order variable mentioned above.  Rather than, spend another morning attempting a solution to that problem, I decided to go with what I had.  It worked, even though it was a bit complicated.
 
-###### Accomplishments :
+### Accomplishments :
 
 I learned a ton in this project, but there are a couple things of which I'm really proud.  The first is that I think I did a good job of separating the views into relevant partials.  It's really nice when a piece of a view can be implemented in multiple views, and when particularly complex elements are separated into bite size chunks.  The other thing I liked was the section I created for admin controls:
 
@@ -81,7 +81,7 @@ end
 
 This little piece of meta programming allowed each index view to have admin controls by passing in a model.  I noticed my controls all had the same syntax except that the model changed.  I had seen meta programming used in the past to simplify this issue, and I'm happy with how this turned out.
 
-###### Goals for the Future :
+### Goals for the Future :
 
 1. Get in to TDD.  This app was mostly created using EDD, but I found it precarious as the app got more complicated.  I'm setting an aspiration to create tests for my next project.
 
