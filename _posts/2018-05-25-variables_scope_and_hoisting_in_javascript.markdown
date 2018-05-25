@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Variables, Scope, and Hoisting in JavaScript"
-date:       2018-05-25 14:13:49 +0000
+date:       2018-05-25 10:13:50 -0400
 permalink:  variables_scope_and_hoisting_in_javascript
 ---
 
@@ -10,7 +10,7 @@ The question at the heart of this post is, 'How does JavaScript find a variable 
 
 ## The Basics
 
-**Declaring a variable** just means telling the computer that the word you're about to put an equals sign after is a variable and that there are certain rules this variable should follow over the course if its lifespan.  In Ruby you don't need to do this; you can simply type ```variable_name = "value"```.  Techincally, this *can* be done in JS, but the consequences of doing so, which we'll come to later on, are less desirable.
+**Declaring a variable** just means telling the computer that the word you're about to put an equals sign after is a variable and that there are certain rules this variable should follow over the course if its lifespan.  In Ruby you don't need to do this; you can simply type ```variable_name = "value"```.  Technically, this *can* be done in JS, but the consequences of doing so, which we'll come to later on, are less desirable.
 
 **Scope** refers to whether or not a variable is visible to the part of the program that is trying to access it.  There will be more on helpful ways to think about this concept later, but just know now that the 'global scope' is a kind of top level under which everything declared is visible everywhere else in the program.
 
@@ -43,7 +43,7 @@ let fruit = "Orange";
 
 It might seem great at first to get fewer errors, but declaring a variable more than once in the same scope is usually a mistake and can be super confusing for those trying to read your code later on.  Receiving an error message is more useful here, as it helps to keep your code on point.  
 
-* For this reason alone, it's probably best not to use ```var```.  Much of what ```var``` can do,```let``` is also capable of.  Futhermore, the scoping and hoisting issues with ```var``` will all but confirm these suspicions.
+* For this reason alone, it's probably best not to use ```var```.  Much of what ```var``` can do,```let``` is also capable of.  Furthermore, the scoping and hoisting issues with ```var``` will all but confirm these suspicions.
 
 The basic difference between ```const``` and ```let``` is that ```let``` allows you to reassign an initialized variable, ie:
 
@@ -150,7 +150,7 @@ console.log(hello);
 
 Now that we understand the basics of scope and variables in JavaScript let's mess around with them to see if we get anything funky or unexpected.
 
-Let's take one of the block scope examples above and see if we can get some unexpected behaviour:
+Let's take one of the block scope examples above and see if we can get some unexpected behavior:
 
 ```
 const checker = true;
@@ -214,7 +214,7 @@ What's going on here?  It turns out that in JavaScript ```var``` has what's call
 
 There are different models for how scope can work, but the one JavaScript uses is called Lexical Scope.  This just means that the scope is defined by you at the time of you writing your code and does not change.  You can also think of it as 'static scoping' and in opposition to 'dynamic scoping,' which some other languages use.  Since scope doesn't change after you've written it in JS, the compilation phase of running your program goes through your code and associates all your declarations with the appropriate scope before execution.
 
-Way back in the beginning of this blog post I mentioned how JavaScript goes through two phases in translating your code to computer behaviour, a compilation phase and an execution phase.  During the compilation phase both variables and functions, are processed before any part of your code is executed.  Due to this two part process, the program will know what variables and functions you have declared before it knows to what they will become equal.  Consider this:
+Way back in the beginning of this blog post I mentioned how JavaScript goes through two phases in translating your code to computer behavior, a compilation phase and an execution phase.  During the compilation phase both variables and functions, are processed before any part of your code is executed.  Due to this two part process, the program will know what variables and functions you have declared before it knows to what they will become equal.  Consider this:
 
 ```
 function myFn(){
@@ -298,7 +298,7 @@ function hello() {
 }
 ```
 
-We would get "World" in this instance because JS overrides previous functions with subsequent ones when it hoists.  Another case, since we know that [functions can also be expressions (as opposed to statments)](http://2ality.com/2012/09/expressions-vs-statements.html), occurs when we use functions as expressions:
+We would get "World" in this instance because JS overrides previous functions with subsequent ones when it hoists.  Another case, since we know that [functions can also be expressions (as opposed to statements)](http://2ality.com/2012/09/expressions-vs-statements.html), occurs when we use functions as expressions:
 
 ```
 hello();
@@ -320,7 +320,7 @@ function hello() {
 console.log(typeof hello)
 ```
 
-console.log here will tell us that hello is a string, not a function, which shows us that even though functions are declared before variables.  Variable assignment takes presidence over function declaration.
+console.log here will tell us that hello is a string, not a function, which shows us that even though functions are declared before variables.  Variable assignment takes precedence over function declaration.
 
 ## Variable Assignments without Declarations
 
@@ -334,7 +334,7 @@ var fruit;
 console.log( "Apple );
 ```
 
-One might think that we would get an error telling us the variable, fruit, has not been defined since we have not yet declared it; however, in JS when a variable is assigned without a declaration it automatically assigns the variablae to the global scope.  This is called implicit declaration.
+One might think that we would get an error telling us the variable, fruit, has not been defined since we have not yet declared it; however, in JS when a variable is assigned without a declaration it automatically assigns the variable to the global scope.  This is called implicit declaration.
 
 ```
 function myFn (){
@@ -346,5 +346,4 @@ console.log(fruit)
 ```
 
 If ```fruit``` in the code above was declared with ```var```, ```let```, or ```const``` we'd get back "ReferenceError: fruit is not defined" because the variable would only exist within the scope of the function.  However, if you type in the code above you'll see that what actually pops out is "Orange".  Once myFn() was called ```fruit``` got defined.
-
 
