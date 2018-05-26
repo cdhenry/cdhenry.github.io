@@ -18,7 +18,7 @@ The question at the heart of this post is, 'How does JavaScript find a variable 
 
 ## Variables in the Global Scope
 
-JS gives us three ways to declare a variable: ```var```, ```let```, and ```const```.  In the global scope, the main difference between ```var```, and the other two, is that ```var``` will not throw an error if you try to declare the same variable twice in the same scope, ie:
+JS gives us three ways to declare a variable: ```var```, ```let```, and ```const```.  In the global scope, the main difference between ```var```, and the other two, is that ```var``` will not throw an error if you try to declare the same variable twice, ie:
 
 ```
 var fruit = "Apple";
