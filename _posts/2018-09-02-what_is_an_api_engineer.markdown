@@ -36,8 +36,7 @@ Here are some more specific things to think about when designing an API:
 > - Resource Oriented Design, Google
 > 
 
-An API whose resources and associated properties are easy to memorize and facilitate incremental development are much more compelling to potential developers.  Practically, that might mean using only nouns to describe your resources, and making sure those nouns convey just the right amount of information about at resource and it's relationships.  It'll also mean providing good feedback to help developers succeed.
-
+An API whose resources and associated properties are easy to memorize and facilitate incremental development are much more compelling to potential developers.  Practically, that might mean using only nouns to describe your resources, and making sure those nouns convey just the right amount of information about at resource and it's relationships.  It'll also mean providing good feedback to help developers succeed
 > Every client request and server side response is a message and, in an ideal RESTful ecosystem, these messages must be self descriptive. Good feedback involves positive validation on correct implementation, and an informative error on incorrect implementation that can help users debug and correct the way they use the product. For an API, errors are a great way to provide context to using an API. - [SwaggerBlog](https://swagger.io/blog/api-design/api-design-best-practices/)
 > 
 
