@@ -1,10 +1,9 @@
 ---
 layout: post
 title:      "What is an API Engineer?"
-date:       2018-09-02 19:05:48 +0000
+date:       2018-09-02 15:05:49 -0400
 permalink:  what_is_an_api_engineer
 ---
-
 
 > In 1995 only the most tech savviest had websites, and by 2000 many businesses realized having a website was the normal way of doing business. In 2010 many of the tech savviest companies had APIs, and by 2017 many businesses are realizing that having an API is the normal way of doing business--imagine what the Internet will look like by 2020. - http://101.apievangelist.com/
 > 
