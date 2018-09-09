@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "A Batch of Interview Questions"
-date:       2018-09-09 19:05:19 +0000
+date:       2018-09-09 15:05:20 -0400
 permalink:  a_batch_of_interview_questions
 ---
 
@@ -14,7 +14,7 @@ The short answer is that `==` compares value while `===` compares value and type
 
 ### What is the difference when you define a variable using `var` as opposed to not using `var`?
 
-If you're in the global scope there is no difference; however variables defined with `var` can be function scoped, meaning they will only be available within the lexical context of a particular funciton.  Variables that are defined without `var` will automatically be globally scoped regardless of their placement in any lexical context.  Defining variables without using `var`, `let`, or `const` is mostly accidental and can cause some weird and difficult to decipher debugging behaviour.
+If you're in the global scope there is no difference; however variables defined with `var` can be function scoped, meaning they will only be available within the lexical context of a particular function.  Variables that are defined without `var` will automatically be globally scoped regardless of their placement in any lexical context.  Defining variables without using `var`, `let`, or `const` is mostly accidental and can cause some weird and difficult to decipher debugging behavior.
 
 ### How do `let` and `const` differ from `var` in ES6?
 
@@ -30,11 +30,11 @@ Closure refers to the way functions in Javascript carry around the lexical envir
 
 ### What is CRUD in REST and what are the corresponding HTTP operations?
 
-CRUD is a cycle for keeping recrods current and permanent in a database setting.  Rest is an architecture for developing API using HTTP protocol to link resources to actions in a client-server relationship.  Each stip in the CRUD cycle maps to a RESTful HTTP protocol: Create to POST, Read to GET, Update to PUT/PATCH, and Delete to DELETE.
+CRUD is a cycle for keeping records current and permanent in a database setting.  Rest is an architecture for developing API using HTTP protocol to link resources to actions in a client-server relationship.  Each step in the CRUD cycle maps to a RESTful HTTP protocol: Create to POST, Read to GET, Update to PUT/PATCH, and Delete to DELETE.
 
 ### What is Event Bubbling?
 
-Bubbling refers to the order in which event handlers are called when one HTML element is nested inside another element and both have registered a listener for the same event.  Events will registered starting with the innermost element and make their way to the outermost element or document level.  Bubbling is the default method of event propogation in most modern browsers, but another method is event capturing which will do the opposite of bubbling: events will be registered first at the topmost level and make their way down to the innermost.
+Bubbling refers to the order in which event handlers are called when one HTML element is nested inside another element and both have registered a listener for the same event.  Events will registered starting with the innermost element and make their way to the outermost element or document level.  Bubbling is the default method of event propagation in most modern browsers, but another method is event capturing which will do the opposite of bubbling: events will be registered first at the topmost level and make their way down to the innermost.
 
 ### What is the Box Model?
 
@@ -42,4 +42,4 @@ The Box Model is how CSS treats every element in your HTML document: as a box wi
 
 ### What is Big O Notation?
 
-Big O Notation is a tool for assessing algorithm efficiency.  It's a worst case senario equation that shows how time or space scale with respect to some input variables.
+Big O Notation is a tool for assessing algorithm efficiency.  It's a worst case scenario equation that shows how time or space scale with respect to some input variables.
