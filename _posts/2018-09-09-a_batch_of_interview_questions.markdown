@@ -6,9 +6,11 @@ permalink:  a_batch_of_interview_questions
 ---
 
 
-I recently had an experience on my job search where I was asked to record an interview with no one on the other end of the video chat.  After speaking with a few people, I've come to find out this is more common than I'd originally thought and is just one of the many ways companies will use to screen potential candidates.  What follows are the questions I was asked, and an approximation of the answers I was able to muster.  
+I recently had an experience on my job search where I was asked to record an interview with no one on the other end of the video chat. After speaking with a few friends, I've come to find out that this is more common than I'd originally thought and is just one of the many ways companies will use to screen potential candidates. What follows are the questions I was asked, and an approximation of the answers I was able to muster.  
 
-With mine, I think they were trying to assess whether or not it would be worth it to call me in based on a set of fundamental questions.  The job has to do with development using Javascript and CSS, so the questions are testing for this knowledge.  These answers are coming mainly from my experience with the Flatiron curriculum as I didn't have much experience in the field previous to taking classes with Flatiron.  I'm happy to report that everything I was asked was indeed covered in the Flatiron curriculum.  Lastly, the process lasted about 10-15 minutes; I was given 30 seconds to look at the questions and 30 seconds to answer.
+The job has to do with development using Javascript and CSS, so the questions are testing for this knowledge. These answers are coming mainly from my experience with the Flatiron curriculum, as I didn't have much experience in the field previous to taking classes through Flatiron. I'm happy to report that everything I was asked was indeed covered in the curriculum. 
+
+Lastly, for context, the process lasted about 10-15 minutes; I was given 30 seconds to look at the questions and 30 seconds to answer.
 
 ### What is the difference between `==` and `===` in Javascript?
 
@@ -22,7 +24,7 @@ If you're in the global scope there is no difference; however variables defined 
 
 First, `var` declarations are globally/function scoped while `let` and `const` declarations are block scoped.  `var` variables can be updated and re-declared within their scope; `let` variables can be updated but not re-declared; `const` variables can neither be updated nor re-declared.  They are all hoisted, but while `var` variables are initialized with `undefined`, `let` and `const` variables are not initialized.  Lastly, `var` and `let` can be declared without being initialized, but `const` must be initialized during declaration.
 
-### What is the advantage of AJAX calls
+### What is the advantage of AJAX calls?
 
 The biggest advantages of AJAX are that it can reload only the content that needs to be reloaded on a page which reduces bandwidth/load time and improves user experience.  When you use AJAX is possible to make a webpage feel more interactive and quick to respond, as if it were an application running on your computer rather than a series of stateless requests made to a server through the internet.
 
