@@ -26,7 +26,7 @@ First, `var` declarations are globally/function scoped while `let` and `const` d
 
 ### What is the advantage of AJAX calls?
 
-The biggest advantages of AJAX are that it can reload only the content that needs to be reloaded on a page which reduces bandwidth/load time and improves user experience.  When you use AJAX is possible to make a webpage feel more interactive and quick to respond, as if it were an application running on your computer rather than a series of stateless requests made to a server through the internet.
+The biggest advantage of AJAX is that it can reload only the content that needs to be reloaded on a page. which reduces bandwidth/load time and improves user experience.  When you use AJAX it is possible to make a webpage feel more interactive and quick to respond, as if it were an application running on your computer rather than a series of stateless requests made to a server through the internet.
 
 ### What is a closure in Javascript?
 
@@ -38,11 +38,11 @@ CRUD is a cycle for keeping records current and permanent in a database setting.
 
 ### What is Event Bubbling?
 
-Bubbling refers to the order in which event handlers are called when one HTML element is nested inside another element and both have registered a listener for the same event.  Events will registered starting with the innermost element and make their way to the outermost element or document level.  Bubbling is the default method of event propagation in most modern browsers, but another method is event capturing which will do the opposite of bubbling: events will be registered first at the topmost level and make their way down to the innermost.
+Bubbling refers to the order in which event handlers are called when one HTML element is nested inside another element and both have registered a listener for the same event.  Events will register starting with the innermost element and make their way to the outermost element or document level.  Bubbling is the default method of event propagation in most modern browsers, but another method is event capturing which will do the opposite of bubbling: events will be registered first at the topmost level and make their way down to the innermost.
 
 ### What is the Box Model?
 
-The Box Model is how CSS treats every element in your HTML document: as a box with a bunch of properties that determine where it appears on the page.  At the core is the content measured by height/width properties, directly outside the content is padding, around the padding is a border, and around the border are margins.  Each of these layers of the box can be adjusted to create any number of spacing effects on any element on the page.
+The Box Model is how CSS treats every element in your HTML document: as a box with a bunch of properties that determine where it appears on the page.  At the core is the content, measured by height/width properties, directly outside the content is padding, around the padding is a border, and around the border are margins.  Each of these layers of the box can be adjusted to create any number of spacing effects on any element on the page.
 
 ### What is Big O Notation?
 
