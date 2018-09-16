@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "React/Redux Project"
-date:       2018-05-28 19:17:03 +0000
+date:       2018-05-28 15:17:04 -0400
 permalink:  react_redux_project
 ---
 
 
-React is a powerful extension for JavaScript allowing for more simplicity when creating interactive user interfaces.  With the use of a virtual DOM and a declarative programming style it helps makes interaction speedy and intuitive.  Redux further extends the power of React by providing a predictable state container, which makes the web app more predictable and easy to test.  This project is, primarily, an exploration of those tools.  It will also utilize a Rails API backend to demonstrate a culmination of the skills acquired at Flatiron.  
+React is a powerful framework for JavaScript allowing for more simplicity when creating interactive user interfaces.  With the use of a virtual DOM and a declarative programming style it helps makes interaction speedy and intuitive.  Redux further extends the power of React by providing a predictable state container, which makes the web app more predictable and easy to test.  This project is, primarily, an exploration of those tools.  It will also utilize a Rails API backend to demonstrate a culmination of the skills acquired at Flatiron.  
 
 ## The App: 
 
